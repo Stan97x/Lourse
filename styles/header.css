@@ -1,0 +1,63 @@
+:root {
+    --violet: #AC2B94;
+    --violetSombre: #6A1B5B;
+    --jaune: #CBCB83;
+}
+@font-face {
+    font-family: typo;
+    src: local("MaPoliceLocale"), url("../font/Typo_Round_Regular_Demo.otf") format("truetype");
+}
+body{
+    font-family: 'typo';
+}
+p{    
+    font-size: 1.2em;
+}
+a{
+    color: unset;
+}
+.container_entete{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #CBCB83;
+    padding: 2em 1em;
+    margin-top: 8.5em;
+}
+.item_header{
+    width: 45%;
+    max-width: 45em;
+    min-width: 18em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.txt_header{
+    max-width: 28em;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+.colored_txt_header,.colored_txt{
+    font-size: 1em;
+    font-weight: bold;
+}
+.colored_txt_header{    
+    color: var(--violetSombre);
+}
+.colored_txt{
+    color: var(--violet);
+}
+.image_entete{
+    width: 20%;
+    max-width: 15em;
+    min-width: 10em;
+    align-self: center;
+}
+@media screen and (max-width: 1044px) {
+    .container_entete{
+        margin-top: 11em;
+    }
+}

@@ -1,0 +1,10 @@
+.container_campagne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+}
+.txt_campagne{
+    width: 70%;
+    margin: 1em 0;
+}

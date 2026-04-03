@@ -1,0 +1,81 @@
+form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.champ_obligatoire{
+    margin: 1em 0;
+    font-size: 1.5em;
+}
+label{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+input,textarea,select{
+    border: 2px solid var(--violet);
+    margin-bottom: 1em;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+}
+input{    
+    height: 3em;
+}
+textarea{
+    height: 6em;
+}
+.button_form{
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    height: 3em;
+    font-size: 1.3em;
+    border-radius: 2em;
+    margin: 1em 0;
+    transition: all ease-in-out 0.5s;
+}
+.button_connexion{
+    color: white;
+    background-color: var(--violet);
+}
+.button_connexion:hover{
+    transform: scale(1.05);
+}
+.button_sincrire{
+    color: var(--violet);
+    width: 70%;
+}
+.button_sincrire:hover{
+    border: 2px solid var(--violet);
+}
+.txt_validate,.txt_error{
+    text-align: center;
+    font-weight: bold;
+}
+.txt_validate{
+    color: var(--violet);
+}
+.txt_error{
+    color: red;
+}
+input[type="file"] {
+    width: auto;
+    border: none;
+    height: auto;
+}
+input[type=file]::file-selector-button{
+    cursor: pointer;
+    color: white;
+    width: 30%;
+    max-width: 10em;
+    min-width: 9em;
+    background-color: var(--violet);
+    border: none;
+    border-radius: 2em;
+    height: 3em;
+    padding: 0 0.5em;
+    transition: transform ease-in-out 0.5s;
+}
+input[type=file]::file-selector-button:hover{
+    transform: scale(1.1);
+}
